@@ -11,6 +11,11 @@ async function run() {
   const user = new User({
     name: "Hasan",
     age: 20,
+    hobbies: ["Coding", "Making YouTube contents", "Reading", "Exercising"],
+    address: {
+      street: "Jln. HKSN Gg.Swadayatani RT. 10, RW. 01",
+      city: "Banjarmasin",
+    },
   });
   user.save().then(() => console.log("user saved"));
   console.log(user);
