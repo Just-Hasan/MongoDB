@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const app = express();
 const User = require("./User");
 app.listen("3000");
-mongoose.connect("mongodb://localhost:27017/appdb");
+mongoose.connect(
+  "mongodb+srv://iadore2code:test123@experiment.mk4zxt1.mongodb.net/appDb?retryWrites=true&w=majority"
+);
 
 async function run() {
   const user = new User({
